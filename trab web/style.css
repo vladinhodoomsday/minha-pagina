@@ -1,0 +1,326 @@
+#home{
+	box-shadow: 0px 0px 10px black;
+	position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background-color: #9906a5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+#homeN{
+	opacity: 0;
+	transition: 0.6s;
+}
+
+#topB{
+
+	transition: 0.3s;
+	box-shadow: 0px 0px 10px black;
+	opacity: 0;
+	position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: #9906a5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+
+#iH{
+
+	width: 20%;
+	float: right;
+
+}
+
+/* Style do corpo*/
+
+.header{
+
+	font-family: "Helvetica";
+	border-style: solid;
+	background-color: #9906a5;
+	text-align: center;
+	height: 100px;
+	color: #9906a5;
+
+
+}
+.header h1{
+
+	color: white;
+
+}
+
+body, html{
+
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+
+	position: static;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+
+    margin-top: 10px;
+    padding-top: 5px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.body {
+
+	font-family: "Helvetica";
+	margin-left: 20%;
+	margin-right: 20%;
+	min-height: 100%;
+	position: static;
+
+}
+
+
+
+
+@keyframes zoomIn{
+	from{min-width: 0%; min-height: 0%;}
+	to {min-width: 50%; min-height: 50%;}
+}
+
+
+@keyframes zoomInImg{
+	from{width: 0%; height: 0%;}
+	to {width: 35%;height: 35%}
+}
+
+@keyframes popH{
+	from{font-size: 0px;}
+	to {font-size: 23px;}
+}
+@keyframes pop{
+	from{font-size: 0px;}
+	to {font-size: 14px;}
+}
+
+#table {
+    display: none;
+    min-width: 100%;
+    position: static;
+    overflow-x: auto;
+
+}
+
+#tableTb {
+
+    display: none;
+    min-width: 100%;
+
+
+}
+
+td, th {
+	width: 1%;
+	padding:10px;
+}
+.primeiro{
+	background-color: grey;
+	color: black;
+}
+#tableH {display: none;}
+
+
+
+/* OverLay Cidade */
+#overlayC {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    cursor: pointer;
+
+}
+
+
+#textC{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    background-color: white;
+    min-width: 50%;
+    min-height: 50%;
+    color: black;
+	text-align: center;
+	padding: 15px;
+
+}
+
+#overCont h1{
+	animation-name: popH;
+    animation-duration: 2s;
+    font-size: 23px;
+}
+
+#overCont p{
+
+	animation-name: pop;
+    animation-duration: 2s;
+    font-size: 14px;
+
+}
+#overCont img{
+	animation-name: zoomInImg;
+    animation-duration: 2s;
+    width: 35%;
+    height: 35%
+
+}
+
+/* Resto das coisas */
+
+
+
+#main{
+	transition: 0.5s;
+
+}
+
+.bName{
+	background-color: #AF66DF;
+	margin-top: 10px;
+	border: none;
+
+}
+
+
+
+
+.btn-primary{
+
+	background-color: #c30ad3;
+	border-style: none;
+
+}
+
+.btn-primary:hover{
+
+	background-color: #9b18a5;
+	border-style: none;
+	transition-duration: 0.25s;
+
+}
+
+#hipL{
+	text-decoration-line: underline;
+    text-decoration-style: solid;
+	color: #9b18a5
+}
+
+#hipL:hover{
+	cursor: pointer;
+	text-decoration-style: double;
+	color: #e126ef;
+}
+
+.btn-default {
+
+	margin-left: 10px;
+	width: 200px;
+	background-color: black;
+	font-family: "Helvetica";
+	color: white;
+	border-style: none;
+
+
+
+}
+.btn-default:hover{
+	transition-duration: 0.25s;
+	background-color: #9b18a5;
+	border-style: none;
+	color: white;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.closebtn:hover{
+	text-decoration: none;
+}
+
+.closebtn:onclick{
+	text-decoration: none;
+}
+
+.sidenav .closebtn{
+
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px
+
+
+}
+
+@media screen and (max-width: 640px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav {z-index: 3;}
+
+
+
+  footer {padding: 0px;}
+  footer {margin: 0px;}
+  footer {position: static;}
+
+
+}
